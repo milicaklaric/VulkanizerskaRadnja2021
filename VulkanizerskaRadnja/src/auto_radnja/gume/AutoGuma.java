@@ -80,12 +80,14 @@ public class AutoGuma {
 	/**
 	 * Postavlja preènik gume na novu vrednost
 	 * 
+	 * Testom testSetPrecnikVanGranica otkrivena greška - ispravljna
+	 * 
 	 * @param precnik Preènik gume kao ceo broj
 	 * 
 	 * @throws java.lang.RuntimeException ukoliko je uneti preènik manji od 13 ili veæi od 22
 	 */
 	public void setPrecnik(int precnik) {
-		if (precnik < 13 && precnik > 22)
+		if (precnik < 13 || precnik > 22)
 			throw new RuntimeException("Precnik van opsega");
 		this.precnik = precnik;
 	}
@@ -98,12 +100,14 @@ public class AutoGuma {
 	/**
 	 * Postavlja širinu gume na novu vrednost
 	 * 
+	 * Testom testSetSirinaVanGranica otkrivena greška - ispravljna
+	 * 
 	 * @param sirina Širina gume kao ceo broj
 	 * 
 	 * @throws java.lang.RuntimeException ukoliko je uneta širina manja od 135 ili veæa od 355
 	 */
 	public void setSirina(int sirina) {
-		if (sirina < 135 && sirina > 355)
+		if (sirina < 135 || sirina > 355)
 			throw new RuntimeException("Sirina van opsega");
 		this.sirina = sirina;
 	}
