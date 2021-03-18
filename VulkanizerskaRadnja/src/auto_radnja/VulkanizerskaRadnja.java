@@ -3,8 +3,17 @@ package auto_radnja;
 import java.util.LinkedList;
 import auto_radnja.gume.AutoGuma;
 
+/**
+ * Klasa implementira interfejs Radnja i predstavlja implementaciju preko liste
+ * 
+ * @author MK
+ *
+ */
 public class VulkanizerskaRadnja implements Radnja {
 	
+	/**
+	 * Lista koja sadrži sve gume u vulkanizerskoj radnji
+	 */
 	private LinkedList<AutoGuma> gume = new LinkedList<AutoGuma>();
 
 	@Override
