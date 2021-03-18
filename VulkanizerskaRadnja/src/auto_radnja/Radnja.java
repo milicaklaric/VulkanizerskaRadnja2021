@@ -29,4 +29,11 @@ public interface Radnja {
 	 */
 	LinkedList<AutoGuma> pronadjiGumu(String markaModel);
 	
+	/**
+	 * Vraæa sve gume u vulkanizerskoj radnji
+	 * 
+	 * @return Lista svih guma u radnji
+	 * 
+	 */
+	LinkedList<AutoGuma> vratiSveGume();
 }
